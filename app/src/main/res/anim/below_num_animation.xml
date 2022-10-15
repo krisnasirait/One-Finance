@@ -2,8 +2,8 @@
 <set xmlns:android="http://schemas.android.com/apk/res/android">
 
     <translate
-        android:fromXDelta="0%"
-        android:fromYDelta="150%"
+        android:fromXDelta="-100%"
+        android:fromYDelta="100%"
         android:duration = "500"/>
 
     <alpha

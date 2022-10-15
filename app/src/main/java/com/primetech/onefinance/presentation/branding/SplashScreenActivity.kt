@@ -19,8 +19,8 @@ class SplashScreenActivity : AppCompatActivity() {
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val topAnimation = AnimationUtils.loadAnimation(this, R.anim.top_animation)
-        val bottomAnimation = AnimationUtils.loadAnimation(this, R.anim.bottom_animation)
+        val topAnimation = AnimationUtils.loadAnimation(this, R.anim.above_num_animation)
+        val bottomAnimation = AnimationUtils.loadAnimation(this, R.anim.below_num_animation)
 
         binding.ivOneAbove.startAnimation(topAnimation)
         binding.ivOneBelow.startAnimation(bottomAnimation)
