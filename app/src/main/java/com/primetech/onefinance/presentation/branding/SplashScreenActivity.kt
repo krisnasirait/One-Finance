@@ -19,11 +19,13 @@ class SplashScreenActivity : AppCompatActivity() {
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val topAnimation = AnimationUtils.loadAnimation(this, R.anim.above_num_animation)
-        val bottomAnimation = AnimationUtils.loadAnimation(this, R.anim.below_num_animation)
+        val aboveAnimation = AnimationUtils.loadAnimation(this, R.anim.above_num_animation)
+        val belowAnimation = AnimationUtils.loadAnimation(this, R.anim.below_num_animation)
+        val bottomAnimation = AnimationUtils.loadAnimation(this, R.anim.bottom_animation)
 
-        binding.ivOneAbove.startAnimation(topAnimation)
-        binding.ivOneBelow.startAnimation(bottomAnimation)
+        binding.ivOneAbove.startAnimation(aboveAnimation)
+        binding.ivOneBelow.startAnimation(belowAnimation)
+        binding.ivOneFinance.startAnimation(bottomAnimation)
 
         binding.ivSplashDummy.alpha = 0f
         binding.ivSplashDummy.animate().setDuration(2700).alpha(1f).withEndAction{
