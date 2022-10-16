@@ -11,10 +11,11 @@
         android:layout_margin="20dp">
         <ImageView
             android:id="@+id/ivLogo"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
         <TextView
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
@@ -25,7 +26,29 @@
             android:textColor="@color/black"
             app:layout_constraintStart_toEndOf="@id/ivLogo"
             app:layout_constraintTop_toTopOf="parent"
-            android:layout_margin="20dp"/>
+            android:layout_marginStart="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+            android:id="@+id/tvAmountHave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. 148"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="20dp"/>
+        <TextView
+            android:id="@+id/tvInUsd"
+            android:textColor="@color/dark_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 68, 182"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/tvAmountHave"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="20dp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>
