@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".presentation.branding.fragmentlanding.SecondLandingFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/tvFastest"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="Fastest Response Time"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:layout_marginTop="77dp"
+        android:fontFamily="@font/poppinssemibold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/tvWeWell2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We will make sure you will not skip any valueable time "
+        android:gravity="center_horizontal"
+        android:layout_marginHorizontal="16dp"
+        android:textSize="16sp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/poppinsregular"
+        app:layout_constraintTop_toBottomOf="@id/tvFastest" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
