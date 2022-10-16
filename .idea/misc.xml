@@ -8,6 +8,8 @@
         <entry key="..\:/Project/Kotlin/OneFinance/app/src/main/res/menu/bottom_nav_menu.xml" value="0.365625" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/activity_landing_page.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/activity_splash_screen.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/fragment_first_landing.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/fragment_second_landing.xml" value="0.1" />
       </map>
     </option>
   </component>
