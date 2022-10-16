@@ -1,4 +1,4 @@
-package com.primetech.onefinance.presentation.branding
+package com.primetech.onefinance.presentation.branding.landingpage
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,10 +6,10 @@ import android.view.animation.AnimationUtils
 import androidx.fragment.app.Fragment
 import com.primetech.onefinance.R
 import com.primetech.onefinance.databinding.ActivityLandingPageBinding
-import com.primetech.onefinance.presentation.branding.adapter.ViewPagerAdapter
-import com.primetech.onefinance.presentation.branding.fragmentlanding.FirstLandingFragment
-import com.primetech.onefinance.presentation.branding.fragmentlanding.SecondLandingFragment
-import com.primetech.onefinance.presentation.branding.fragmentlanding.ThirdLandingFragment
+import com.primetech.onefinance.presentation.branding.landingpage.adapter.ViewPagerAdapter
+import com.primetech.onefinance.presentation.branding.landingpage.fragmentlanding.FirstLandingFragment
+import com.primetech.onefinance.presentation.branding.landingpage.fragmentlanding.SecondLandingFragment
+import com.primetech.onefinance.presentation.branding.landingpage.fragmentlanding.ThirdLandingFragment
 
 class LandingPageActivity : AppCompatActivity() {
 

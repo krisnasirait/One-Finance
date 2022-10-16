@@ -14,10 +14,10 @@
         android:theme="@style/Theme.OneFinance"
         tools:targetApi="31">
         <activity
-            android:name=".presentation.branding.LandingPageActivity"
+            android:name=".presentation.branding.landingpage.LandingPageActivity"
             android:exported="false" />
         <activity
-            android:name=".presentation.branding.SplashScreenActivity"
+            android:name=".presentation.branding.splash.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

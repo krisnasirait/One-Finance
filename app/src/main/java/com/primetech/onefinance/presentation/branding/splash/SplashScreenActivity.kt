@@ -1,13 +1,13 @@
-package com.primetech.onefinance.presentation.branding
+package com.primetech.onefinance.presentation.branding.splash
 
 import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.animation.AnimationUtils
-import com.primetech.onefinance.MainActivity
 import com.primetech.onefinance.R
 import com.primetech.onefinance.databinding.ActivitySplashScreenBinding
+import com.primetech.onefinance.presentation.branding.landingpage.LandingPageActivity
 
 @SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {

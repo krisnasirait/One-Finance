@@ -1,4 +1,4 @@
-package com.primetech.onefinance.presentation.branding.adapter
+package com.primetech.onefinance.presentation.branding.landingpage.adapter
 
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment

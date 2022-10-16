@@ -1,4 +1,4 @@
-package com.primetech.onefinance.presentation.branding.fragmentlanding
+package com.primetech.onefinance.presentation.branding.landingpage.fragmentlanding
 
 import android.content.Intent
 import android.os.Bundle
