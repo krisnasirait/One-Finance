@@ -29,7 +29,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
         binding.ivSplashDummy.alpha = 0f
         binding.ivSplashDummy.animate().setDuration(2700).alpha(1f).withEndAction{
-            Intent(this, MainActivity::class.java).also {
+            Intent(this, LandingPageActivity::class.java).also {
                 startActivity(it)
             }
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
