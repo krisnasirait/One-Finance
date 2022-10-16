@@ -23,6 +23,7 @@ class LandingPageActivity : AppCompatActivity() {
         val logoAnimation = AnimationUtils.loadAnimation(this, R.anim.landing_page_animation)
         binding.ivLogoLandingUp.startAnimation(logoAnimation)
         binding.ivLogoLandingBot.startAnimation(logoAnimation)
+        binding.ivLogoShadow.startAnimation(logoAnimation)
 
         setFragment()
     }
