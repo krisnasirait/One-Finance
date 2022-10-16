@@ -74,6 +74,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
 
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

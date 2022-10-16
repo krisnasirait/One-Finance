@@ -15,6 +15,7 @@
         android:text="SKIP"
         android:fontFamily="@font/poppinsmedium"
         android:textSize="18sp"
+        android:textColor="@color/white"
         android:layout_margin="16dp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -27,6 +28,7 @@
         android:text="Easy To Use"
         android:gravity="center_horizontal"
         android:textSize="20sp"
+        android:textColor="@color/white"
         android:layout_marginTop="77dp"
         android:fontFamily="@font/poppinssemibold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,6 +42,7 @@
         android:gravity="center_horizontal"
         android:layout_marginHorizontal="16dp"
         android:textSize="16sp"
+        android:textColor="@color/white"
         android:layout_marginTop="27dp"
         android:fontFamily="@font/poppinsregular"
         app:layout_constraintTop_toBottomOf="@id/tvEasy" />
