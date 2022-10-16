@@ -27,7 +27,7 @@
         android:text="We will make sure you will not skip any valueable time "
         android:gravity="center_horizontal"
         android:layout_marginHorizontal="16dp"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:textColor="@color/white"
         android:layout_marginTop="27dp"
         android:fontFamily="@font/poppinsregular"
