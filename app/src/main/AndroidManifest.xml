@@ -14,7 +14,7 @@
         android:theme="@style/Theme.OneFinance"
         tools:targetApi="31">
         <activity
-            android:name=".presentation.auth.LandingPageActivity"
+            android:name=".presentation.branding.LandingPageActivity"
             android:exported="false" />
         <activity
             android:name=".presentation.branding.SplashScreenActivity"

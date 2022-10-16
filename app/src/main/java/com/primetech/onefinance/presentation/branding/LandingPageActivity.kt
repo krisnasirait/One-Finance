@@ -1,4 +1,4 @@
-package com.primetech.onefinance.presentation.auth
+package com.primetech.onefinance.presentation.branding
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
