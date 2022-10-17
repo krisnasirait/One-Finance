@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import com.primetech.onefinance.MainActivity
 import com.primetech.onefinance.databinding.FragmentThirdLandingBinding
 import com.primetech.onefinance.presentation.auth.LoginActivity
+import com.primetech.onefinance.presentation.auth.SignUpActivity
 
 class ThirdLandingFragment : Fragment() {
 
@@ -37,6 +38,12 @@ class ThirdLandingFragment : Fragment() {
 
         binding.btnSignIn.setOnClickListener {
             Intent(context, LoginActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.btnSignUp.setOnClickListener {
+            Intent(context, SignUpActivity::class.java).also {
                 startActivity(it)
             }
         }
