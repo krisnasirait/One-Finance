@@ -1,6 +1,8 @@
 package com.primetech.onefinance.wallet
 
 import android.content.Context
+import android.view.LayoutInflater
+import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.primetech.onefinance.R
@@ -26,5 +28,18 @@ class PortofolioAdapter(
             itemBinding.tvAmountHave.text = portofolio.amountCoin
             itemBinding.tvInUsd.text = portofolio.amountInUsd
         }
+    }
+
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        binding = ItemPortofolioBinding.inflate(LayoutInflater.from(context), parent, false)
+        return ViewHolder(binding)
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        holder.bind(listCoin[position])
+    }
+
+    override fun getItemCount(): Int {
+        return listCoin.size
     }
 }
