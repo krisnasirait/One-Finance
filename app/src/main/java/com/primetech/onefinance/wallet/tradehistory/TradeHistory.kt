@@ -1,7 +1,7 @@
 package com.primetech.onefinance.wallet.tradehistory
 
 class TradeHistory(
-    amountTrade: Float?,
-    price: Int?,
-    status: Boolean?,
+    val amountTrade: Float?,
+    val price: Int?,
+    val status: String?,
 )
