@@ -17,9 +17,10 @@ class WalletFragment : Fragment() {
     private lateinit var binding: FragmentWalletBinding
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
         binding = FragmentWalletBinding.inflate(layoutInflater, container, false)
         return binding.root
@@ -36,14 +37,14 @@ class WalletFragment : Fragment() {
 
         binding.rvPortfolio.layoutManager =
             LinearLayoutManager(
-                requireContext(),
+                context,
                 LinearLayoutManager.VERTICAL,
                 false
             )
 
         binding.rvTradeHistory.layoutManager =
             LinearLayoutManager(
-                requireContext(),
+                context,
                 LinearLayoutManager.VERTICAL,
                 false
             )

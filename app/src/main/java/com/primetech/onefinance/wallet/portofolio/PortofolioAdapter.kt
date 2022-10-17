@@ -1,29 +1,23 @@
 package com.primetech.onefinance.wallet.portofolio
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.primetech.onefinance.R
 import com.primetech.onefinance.databinding.ItemPortofolioBinding
 
-class PortofolioAdapter(
-    private val listCoin: ArrayList<Portofolio>,
-    private val context: Context
-) : RecyclerView.Adapter<PortofolioAdapter.ViewHolder>() {
+class PortofolioAdapter : RecyclerView.Adapter<PortofolioAdapter.ViewHolder>() {
 
     private lateinit var binding: ItemPortofolioBinding
+    private val listPortofolio = mutableListOf<Portofolio>()
 
     inner class ViewHolder(private val itemBinding: ItemPortofolioBinding) :
         RecyclerView.ViewHolder(itemBinding.root) {
         fun bind(portofolio: Portofolio) {
-            itemBinding.ivLogo.setImageDrawable(
-                ContextCompat.getDrawable(
-                    context,
-                    R.drawable.ic_launcher_foreground
-                )
-            )
+            Glide.with(binding.root)
+                .load(R.drawable.ic_launcher_foreground)
+                .into(binding.ivLogo)
             itemBinding.tvTitle.text = portofolio.coiName
             itemBinding.tvAmountHave.text = portofolio.amountCoin
             itemBinding.tvInUsd.text = portofolio.amountInUsd
@@ -31,15 +25,15 @@ class PortofolioAdapter(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        binding = ItemPortofolioBinding.inflate(LayoutInflater.from(context), parent, false)
+        binding = ItemPortofolioBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(listCoin[position])
+        holder.bind(listPortofolio[position])
     }
 
     override fun getItemCount(): Int {
-        return listCoin.size
+        return listPortofolio.size
     }
 }
