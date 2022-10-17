@@ -36,4 +36,9 @@ class PortofolioAdapter : RecyclerView.Adapter<PortofolioAdapter.ViewHolder>() {
     override fun getItemCount(): Int {
         return listPortofolio.size
     }
+
+    fun setData(item: List<Portofolio>) {
+        listPortofolio.addAll(item)
+        notifyDataSetChanged()
+    }
 }

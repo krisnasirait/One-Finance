@@ -15,6 +15,8 @@ import com.primetech.onefinance.wallet.tradehistory.TradeHistoryAdapter
 class WalletFragment : Fragment() {
 
     private lateinit var binding: FragmentWalletBinding
+    private lateinit var portofolioAdapter: PortofolioAdapter
+    private lateinit var tradeHistoryAdapter: TradeHistoryAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -26,14 +28,14 @@ class WalletFragment : Fragment() {
         return binding.root
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
-        val listPortofolio = getPortofolio()
-        val listTrade = getTrade()
+        portofolioAdapter = PortofolioAdapter()
+        tradeHistoryAdapter = TradeHistoryAdapter()
 
-        val portoAdapter = PortofolioAdapter(listPortofolio, requireContext())
-        val tradeAdapter = TradeHistoryAdapter(listTrade, requireContext())
+        binding.rvPortfolio.adapter = portofolioAdapter
+        binding.rvTradeHistory.adapter = tradeHistoryAdapter
 
         binding.rvPortfolio.layoutManager =
             LinearLayoutManager(
@@ -49,9 +51,8 @@ class WalletFragment : Fragment() {
                 false
             )
 
-        binding.rvPortfolio.adapter = portoAdapter
-        binding.rvTradeHistory.adapter = tradeAdapter
-
+        portofolioAdapter.setData(getPortofolio())
+        tradeHistoryAdapter.setData(getTrade())
     }
 
     private fun getPortofolio(): ArrayList<Portofolio> {
