@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".WalletFragment">
+    tools:context=".wallet.WalletFragment">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvMainWallet"
@@ -75,7 +75,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         app:layout_constraintTop_toBottomOf="@id/tvTitlePortofolio"
-        android:layout_margin="20dp"/>
+        android:layout_margin="10dp"/>
 
     <TextView
         android:id="@+id/tvTitleTradeHistory"
@@ -93,7 +93,9 @@
         android:id="@+id/rvTradeHistory"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@id/tvTitleTradeHistory"
-        android:layout_margin="20dp" />
+        tools:layout_editor_absoluteX="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
