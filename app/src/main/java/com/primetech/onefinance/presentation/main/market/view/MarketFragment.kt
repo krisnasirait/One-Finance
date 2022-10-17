@@ -27,11 +27,12 @@ class MarketFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setAdapter()
+
     }
 
     override fun onResume() {
         super.onResume()
+        setAdapter()
         marketAdapter.clearData()
         marketAdapter.setData(Utility.allMarket)
     }
