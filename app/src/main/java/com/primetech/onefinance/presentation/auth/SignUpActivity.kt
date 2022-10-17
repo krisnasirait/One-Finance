@@ -12,5 +12,13 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setOnClickListener()
+    }
+
+    private fun setOnClickListener(){
+        binding.ivBack.setOnClickListener {
+            finish()
+        }
     }
 }
