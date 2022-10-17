@@ -57,9 +57,18 @@ class WalletFragment : Fragment() {
 
     private fun getPortofolio(): ArrayList<Portofolio> {
         val portoData1 = Portofolio("Bitcoin", "1.34", "$ 40, 623")
+        val portoData2 = Portofolio("Bitcoin", "1.34", "$ 40, 623")
+        val portoData3 = Portofolio("Bitcoin", "1.34", "$ 40, 623")
+        val portoData4 = Portofolio("Bitcoin", "1.34", "$ 40, 623")
+        val portoData5 = Portofolio("Bitcoin", "1.34", "$ 40, 623")
+
 
         val listPorto = ArrayList<Portofolio>()
         listPorto.add(portoData1)
+        listPorto.add(portoData2)
+        listPorto.add(portoData3)
+        listPorto.add(portoData4)
+        listPorto.add(portoData5)
         return listPorto
     }
 
