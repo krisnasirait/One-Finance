@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.primetech.onefinance.MainActivity
+import com.primetech.onefinance.presentation.main.MainActivity
 import com.primetech.onefinance.databinding.FragmentThirdLandingBinding
 import com.primetech.onefinance.presentation.auth.LoginActivity
 import com.primetech.onefinance.presentation.auth.SignUpActivity

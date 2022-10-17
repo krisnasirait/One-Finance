@@ -1,4 +1,4 @@
-package com.primetech.onefinance.wallet.tradehistory
+package com.primetech.onefinance.presentation.main.wallet.tradehistory
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.primetech.onefinance.R
 import com.primetech.onefinance.databinding.ItemTradeHistoryBinding
-import com.primetech.onefinance.wallet.portofolio.Portofolio
 
 class TradeHistoryAdapter : RecyclerView.Adapter<TradeHistoryAdapter.ViewHolder>() {
 

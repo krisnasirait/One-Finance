@@ -1,12 +1,11 @@
-package com.primetech.onefinance
+package com.primetech.onefinance.presentation.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.Navigation
-import androidx.navigation.Navigation.findNavController
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.primetech.onefinance.R
 import com.primetech.onefinance.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
