@@ -1,4 +1,4 @@
-package com.primetech.onefinance.wallet.portofolio
+package com.primetech.onefinance.presentation.main.wallet.portofolio
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

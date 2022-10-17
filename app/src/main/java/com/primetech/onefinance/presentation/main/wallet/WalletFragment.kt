@@ -1,4 +1,4 @@
-package com.primetech.onefinance.wallet
+package com.primetech.onefinance.presentation.main.wallet
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,10 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.primetech.onefinance.databinding.FragmentWalletBinding
-import com.primetech.onefinance.wallet.portofolio.Portofolio
-import com.primetech.onefinance.wallet.portofolio.PortofolioAdapter
-import com.primetech.onefinance.wallet.tradehistory.TradeHistory
-import com.primetech.onefinance.wallet.tradehistory.TradeHistoryAdapter
+import com.primetech.onefinance.presentation.main.wallet.portofolio.Portofolio
+import com.primetech.onefinance.presentation.main.wallet.portofolio.PortofolioAdapter
+import com.primetech.onefinance.presentation.main.wallet.tradehistory.TradeHistory
+import com.primetech.onefinance.presentation.main.wallet.tradehistory.TradeHistoryAdapter
 
 class WalletFragment : Fragment() {
 

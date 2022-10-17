@@ -1,4 +1,4 @@
-package com.primetech.onefinance.wallet.tradehistory
+package com.primetech.onefinance.presentation.main.wallet.tradehistory
 
 class TradeHistory(
     val amountTrade: Double,

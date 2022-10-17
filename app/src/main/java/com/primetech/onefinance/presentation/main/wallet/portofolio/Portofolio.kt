@@ -1,4 +1,4 @@
-package com.primetech.onefinance.wallet.portofolio
+package com.primetech.onefinance.presentation.main.wallet.portofolio
 
 class Portofolio(
     val coiName: String,
