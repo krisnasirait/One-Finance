@@ -5,11 +5,16 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.primetech.onefinance.data.Utility
 import com.primetech.onefinance.databinding.FragmentMarketBinding
+import com.primetech.onefinance.presentation.main.market.adapter.MarketAdapter
 
 class MarketFragment : Fragment() {
 
     private lateinit var binding : FragmentMarketBinding
+
+    private lateinit var marketAdapter: MarketAdapter
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -18,6 +23,24 @@ class MarketFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentMarketBinding.inflate(layoutInflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setAdapter()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        marketAdapter.clearData()
+        marketAdapter.setData(Utility.allMarket)
+    }
+
+    private fun setAdapter(){
+        marketAdapter = MarketAdapter()
+        binding.rvAllMarket.adapter = marketAdapter
+        binding.rvAllMarket.layoutManager = LinearLayoutManager(context)
+        binding.rvAllMarket.setHasFixedSize(true)
     }
 
 }

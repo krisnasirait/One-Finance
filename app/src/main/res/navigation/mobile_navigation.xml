@@ -3,10 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/walletFragment">
+    app:startDestination="@id/wallet">
 
     <fragment
-        android:id="@+id/walletFragment"
+        android:id="@+id/market"
+        android:name="com.primetech.onefinance.presentation.main.market.view.MarketFragment"
+        android:label="Market"
+        tools:layout="@layout/fragment_market" />
+
+    <fragment
+        android:id="@+id/wallet"
         android:name="com.primetech.onefinance.presentation.main.wallet.WalletFragment"
         android:label="wallet"
         tools:layout="@layout/fragment_wallet" />
