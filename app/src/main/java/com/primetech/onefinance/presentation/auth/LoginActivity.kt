@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.primetech.onefinance.databinding.ActivityLoginBinding
-import com.primetech.onefinance.presentation.branding.landingpage.LandingPageActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -20,9 +19,6 @@ class LoginActivity : AppCompatActivity() {
 
     private fun setOnClickListener(){
         binding.ivBack.setOnClickListener {
-//            Intent(this,LandingPageActivity::class.java).also {
-//                startActivity(it)
-//            }
             finish()
         }
 
