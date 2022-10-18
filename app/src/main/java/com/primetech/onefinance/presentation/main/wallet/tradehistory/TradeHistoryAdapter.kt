@@ -16,7 +16,7 @@ class TradeHistoryAdapter : RecyclerView.Adapter<TradeHistoryAdapter.ViewHolder>
         RecyclerView.ViewHolder(itemBinding.root) {
         fun bind(tradeHistory: TradeHistory) {
             Glide.with(binding.root)
-                .load(R.drawable.ic_launcher_foreground)
+                .load(tradeHistory.symbols)
                 .into(binding.ivLogo)
             itemBinding.tvAmount.text = tradeHistory.amountTrade.toString()
             itemBinding.tvPriceUSD.text = tradeHistory.price.toString()
