@@ -1,8 +1,10 @@
 package com.primetech.onefinance.presentation.auth
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.primetech.onefinance.databinding.ActivityLoginBinding
+import com.primetech.onefinance.presentation.branding.landingpage.LandingPageActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -18,7 +20,15 @@ class LoginActivity : AppCompatActivity() {
 
     private fun setOnClickListener(){
         binding.ivBack.setOnClickListener {
-            finish()
+            Intent(this,LandingPageActivity::class.java).also {
+                startActivity(it)
+            }
+        }
+
+        binding.tvSignUp.setOnClickListener {
+            Intent(this, SignUpActivity::class.java).also {
+                startActivity(it)
+            }
         }
     }
 }
