@@ -3,12 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="10dp">
+    android:layout_margin="5dp"
+    app:cardCornerRadius="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_porto_trade"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp">
+        android:layout_margin="5dp">
 
         <ImageView
             android:id="@+id/ivLogo"
@@ -25,7 +31,7 @@
             android:text="Amount"
             app:layout_constraintStart_toEndOf="@id/ivLogo"
             android:textSize="16sp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@id/tvAmount"
             android:layout_marginStart="20dp"/>
@@ -48,7 +54,7 @@
             android:text="Price(USD)"
             app:layout_constraintStart_toEndOf="@id/titleAmount"
             android:textSize="16sp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:layout_marginStart="20dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@id/tvPriceUSD"/>
@@ -74,7 +80,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             android:textSize="16sp"
-            android:textColor="@color/dark_green"/>
+            android:textColor="@color/light_sea_green"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
