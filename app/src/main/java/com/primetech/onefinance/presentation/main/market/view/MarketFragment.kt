@@ -32,7 +32,6 @@ class MarketFragment : Fragment() {
         setAdapter()
         marketAdapter.clearData()
         marketAdapter.setData(Utility.allMarket)
-        Log.d("Market Fragment", "onViewCreated")
     }
 
     private fun setAdapter(){
