@@ -1,5 +1,6 @@
 package com.primetech.onefinance.presentation.main.market.view
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.primetech.onefinance.data.Utility
 import com.primetech.onefinance.databinding.FragmentMarketBinding
 import com.primetech.onefinance.presentation.main.market.adapter.MarketAdapter
+import com.primetech.onefinance.presentation.main.search.SearchActivity
 
 class MarketFragment : Fragment() {
 
@@ -28,13 +30,18 @@ class MarketFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-    }
-
-    override fun onResume() {
-        super.onResume()
         setAdapter()
         marketAdapter.clearData()
         marketAdapter.setData(Utility.allMarket)
+        setOnClickListener()
+    }
+
+    private fun setOnClickListener(){
+        binding.ivSearch.setOnClickListener {
+            Intent(context,SearchActivity::class.java).also {
+                startActivity(it)
+            }
+        }
     }
 
     private fun setAdapter(){
