@@ -20,9 +20,10 @@ class SignUpActivity : AppCompatActivity() {
 
     private fun setOnClickListener(){
         binding.ivBack.setOnClickListener {
-            Intent(this, LandingPageActivity::class.java).also {
-                startActivity(it)
-            }
+//            Intent(this, LandingPageActivity::class.java).also {
+//                startActivity(it)
+//            }
+            finish()
         }
         binding.tvLogin.setOnClickListener {
             Intent(this, LoginActivity::class.java).also {
