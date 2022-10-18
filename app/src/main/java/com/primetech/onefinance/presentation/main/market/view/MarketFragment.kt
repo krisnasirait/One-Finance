@@ -37,7 +37,7 @@ class MarketFragment : Fragment() {
     }
 
     private fun setOnClickListener(){
-        binding.ivSearchCoin.setOnClickListener {
+        binding.ivSearch.setOnClickListener {
             Intent(context,SearchActivity::class.java).also {
                 startActivity(it)
             }
