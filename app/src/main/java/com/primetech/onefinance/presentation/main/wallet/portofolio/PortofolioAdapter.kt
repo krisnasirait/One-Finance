@@ -16,9 +16,9 @@ class PortofolioAdapter : RecyclerView.Adapter<PortofolioAdapter.ViewHolder>() {
         RecyclerView.ViewHolder(itemBinding.root) {
         fun bind(portofolio: Portofolio) {
             Glide.with(binding.root)
-                .load(R.drawable.ic_launcher_foreground)
+                .load(portofolio.symbols)
                 .into(binding.ivLogo)
-            itemBinding.tvTitle.text = portofolio.coiName
+            itemBinding.tvTitle.text = portofolio.coinName
             itemBinding.tvAmountHave.text = portofolio.amountCoin
             itemBinding.tvInUsd.text = portofolio.amountInUsd
         }
