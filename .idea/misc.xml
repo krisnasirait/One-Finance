@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Project/Kotlin/OneFinance/app/src/main/res/drawable/bg_auth.xml" value="0.1815" />
+        <entry key="..\:/Project/Kotlin/OneFinance/app/src/main/res/drawable/bg_bot_nav_bar.xml" value="0.1815" />
+        <entry key="..\:/Project/Kotlin/OneFinance/app/src/main/res/drawable/bg_button_sign.xml" value="0.1815" />
+        <entry key="..\:/Project/Kotlin/OneFinance/app/src/main/res/drawable/bg_circle_indicator.xml" value="0.1815" />
         <entry key="..\:/Project/Kotlin/OneFinance/app/src/main/res/drawable/bg_porto_trade.xml" value="0.1405" />
         <entry key="..\:/Project/Kotlin/OneFinance/app/src/main/res/drawable/bg_wallet.xml" value="0.1405" />
         <entry key="..\:/Project/Kotlin/OneFinance/app/src/main/res/drawable/round_button.xml" value="0.279" />
