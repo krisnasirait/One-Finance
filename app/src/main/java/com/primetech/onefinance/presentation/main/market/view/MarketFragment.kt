@@ -1,6 +1,7 @@
 package com.primetech.onefinance.presentation.main.market.view
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -28,13 +29,10 @@ class MarketFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-    }
-
-    override fun onResume() {
-        super.onResume()
         setAdapter()
         marketAdapter.clearData()
         marketAdapter.setData(Utility.allMarket)
+        Log.d("Market Fragment", "onViewCreated")
     }
 
     private fun setAdapter(){
