@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.primetech.onefinance.R
 import com.primetech.onefinance.databinding.ItemPortofolioBinding
 
 class PortofolioAdapter : RecyclerView.Adapter<PortofolioAdapter.ViewHolder>() {
