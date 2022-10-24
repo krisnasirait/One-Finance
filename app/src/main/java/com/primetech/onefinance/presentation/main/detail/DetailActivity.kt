@@ -19,10 +19,24 @@ class DetailActivity : AppCompatActivity() {
         binding.btnBuy.setOnClickListener {
             showDialogBuy()
         }
+
+        binding.btnSell.setOnClickListener {
+            showDialogSell()
+        }
     }
 
     private fun showDialogBuy() {
         val view = LayoutInflater.from(this).inflate(R.layout.custom_buy_dialog, null, false)
+        val dialogBuilder = AlertDialog.Builder(this)
+        dialogBuilder.setView(view)
+
+        val dialog = dialogBuilder.create()
+
+        dialog.show()
+    }
+
+    private fun showDialogSell() {
+        val view = LayoutInflater.from(this).inflate(R.layout.custom_sell_dialog, null, false)
         val dialogBuilder = AlertDialog.Builder(this)
         dialogBuilder.setView(view)
 
