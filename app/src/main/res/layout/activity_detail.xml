@@ -225,6 +225,7 @@
         app:layout_constraintTop_toBottomOf="@id/cvRight"
         android:weightSum="2">
         <Button
+            android:id="@+id/btnBuy"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -232,6 +233,7 @@
             android:layout_margin="10dp"
             android:backgroundTint="@color/dark_green"/>
         <Button
+            android:id="@+id/btnSell"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
