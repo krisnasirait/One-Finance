@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.primetech.onefinance.R
 import com.primetech.onefinance.databinding.ItemTradeHistoryBinding
 
 class TradeHistoryAdapter : RecyclerView.Adapter<TradeHistoryAdapter.ViewHolder>() {
@@ -16,7 +15,7 @@ class TradeHistoryAdapter : RecyclerView.Adapter<TradeHistoryAdapter.ViewHolder>
         RecyclerView.ViewHolder(itemBinding.root) {
         fun bind(tradeHistory: TradeHistory) {
             Glide.with(binding.root)
-                .load(R.drawable.ic_launcher_foreground)
+                .load(tradeHistory.symbols)
                 .into(binding.ivLogo)
             itemBinding.tvAmount.text = tradeHistory.amountTrade.toString()
             itemBinding.tvPriceUSD.text = tradeHistory.price.toString()

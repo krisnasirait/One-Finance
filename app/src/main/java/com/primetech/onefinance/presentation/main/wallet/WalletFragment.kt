@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.primetech.onefinance.data.Utility
 import com.primetech.onefinance.databinding.FragmentWalletBinding
 import com.primetech.onefinance.presentation.main.wallet.portofolio.Portofolio
 import com.primetech.onefinance.presentation.main.wallet.portofolio.PortofolioAdapter
@@ -51,33 +52,7 @@ class WalletFragment : Fragment() {
                 false
             )
 
-        portofolioAdapter.setData(getPortofolio())
-        tradeHistoryAdapter.setData(getTrade())
-    }
-
-    private fun getPortofolio(): ArrayList<Portofolio> {
-        val portoData1 = Portofolio("Bitcoin", "1.34", "$ 40, 623")
-        val portoData2 = Portofolio("Bitcoin", "1.34", "$ 40, 623")
-        val portoData3 = Portofolio("Bitcoin", "1.34", "$ 40, 623")
-        val portoData4 = Portofolio("Bitcoin", "1.34", "$ 40, 623")
-        val portoData5 = Portofolio("Bitcoin", "1.34", "$ 40, 623")
-
-
-        val listPorto = ArrayList<Portofolio>()
-        listPorto.add(portoData1)
-        listPorto.add(portoData2)
-        listPorto.add(portoData3)
-        listPorto.add(portoData4)
-        listPorto.add(portoData5)
-        return listPorto
-    }
-
-    private fun getTrade(): ArrayList<TradeHistory> {
-        val tradeData1 = TradeHistory(3.245, 2500, "Filled")
-
-        val listTrade = ArrayList<TradeHistory>()
-        listTrade.add(tradeData1)
-        return listTrade
-
+        portofolioAdapter.setData(Utility.dataPorto)
+        tradeHistoryAdapter.setData(Utility.dataTradeHistory)
     }
 }
