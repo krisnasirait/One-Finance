@@ -1,4 +1,4 @@
-package com.primetech.onefinance.presentation.main.home
+package com.primetech.onefinance.presentation.main.home.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
