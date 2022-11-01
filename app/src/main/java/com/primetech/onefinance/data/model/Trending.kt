@@ -3,6 +3,7 @@ package com.primetech.onefinance.data.model
 data class Trending(
     val symbols : Int?,
     val coinName : String?,
+    val acronym : String?,
     val price : String?,
     val change1Hour : String?,
     val change24Hour : String?,
