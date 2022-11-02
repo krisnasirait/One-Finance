@@ -45,12 +45,12 @@ class TrendingAdapter : RecyclerView.Adapter<TrendingAdapter.TrendingViewHolder>
         return itemTrending.size
     }
 
-    private fun clearData (){
+    fun clearData (){
         itemTrending.clear()
     }
 
     @SuppressLint("NotifyDataSetChanged")
-    private fun setData (item : List<Trending>){
+    fun setData (item : List<Trending>){
         itemTrending.addAll(item)
         notifyDataSetChanged()
     }
