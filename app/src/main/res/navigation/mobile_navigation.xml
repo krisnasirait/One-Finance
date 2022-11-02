@@ -6,6 +6,12 @@
     app:startDestination="@id/wallet">
 
     <fragment
+        android:id="@+id/home"
+        android:name="com.primetech.onefinance.presentation.main.home.view.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
         android:id="@+id/market"
         android:name="com.primetech.onefinance.presentation.main.market.view.MarketFragment"
         android:label="Market"

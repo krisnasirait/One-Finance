@@ -16,6 +16,9 @@
         android:theme="@style/Theme.OneFinance"
         tools:targetApi="31" >
         <activity
+            android:name=".presentation.main.search.SearchActivity"
+            android:exported="false" />
+        <activity
             android:name=".presentation.main.detail.DetailActivity"
             android:exported="false" />
         <activity
