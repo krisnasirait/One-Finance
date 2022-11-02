@@ -22,6 +22,7 @@
         <entry key="..\:/Project/Kotlin/OneFinance/app/src/main/res/menu/bottom_nav_menu.xml" value="0.365625" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/drawable/bg_button_sign.xml" value="0.114" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/drawable/bg_circle_indicator.xml" value="0.114" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/activity_home.xml" value="0.15833333333333333" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/activity_landing_page.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/activity_main.xml" value="0.15833333333333333" />
@@ -29,14 +30,20 @@
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/activity_sign_up.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/activity_splash_screen.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/fragment_first_landing.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/fragment_home.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/fragment_market.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/fragment_search.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/fragment_second_landing.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/fragment_third_landing.xml" value="0.22" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/item_market.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/item_top_home.xml" value="0.15745614035087718" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/item_trade_history.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/layout/item_trending.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/ASUS/AndroidStudioProjects/One-Finance/app/src/main/res/menu/bottom_nav_menu.xml" value="0.125" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

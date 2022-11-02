@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.main.home.view.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivLogoOneFinance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_num_one"
+            android:adjustViewBounds="true"
+            android:maxWidth="24dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="@id/ivSearchCoin"
+            app:layout_constraintBottom_toBottomOf="@id/ivSearchCoin"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <ImageView
+            android:id="@+id/ivSearchCoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_one_finance_grey"
+            android:adjustViewBounds="true"
+            android:maxHeight="35dp"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@id/ivLogoOneFinance"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="42dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_search"
+            app:layout_constraintBottom_toBottomOf="@id/ivSearchCoin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ivSearchCoin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTopHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/clToolBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTrending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Trending"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="22sp"
+        app:layout_constraintTop_toBottomOf="@+id/rvTopHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvCoinName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_marginStart="43dp"
+        android:fontFamily="@font/poppinsbold"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrending"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv1h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1h %"
+        android:layout_marginStart="58dp"
+        android:fontFamily="@font/poppinsbold"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrending"
+        app:layout_constraintStart_toEndOf="@id/tvCoinName"/>
+
+    <TextView
+        android:id="@+id/tv24h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24h %"
+        android:layout_marginStart="28dp"
+        android:fontFamily="@font/poppinsbold"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrending"
+        app:layout_constraintStart_toEndOf="@id/tv1h"/>
+
+    <TextView
+        android:id="@+id/tv7d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7d %"
+        android:layout_marginStart="28dp"
+        android:fontFamily="@font/poppinsbold"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrending"
+        app:layout_constraintStart_toEndOf="@id/tv24h"/>
+
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_marginStart="27dp"
+        android:fontFamily="@font/poppinsbold"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrending"
+        app:layout_constraintStart_toEndOf="@id/tv7d"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTrendingHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvCoinName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
