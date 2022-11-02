@@ -70,11 +70,70 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
+    <TextView
+        android:id="@+id/tvCoinName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:fontFamily="@font/poppinsbold"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrending"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_marginStart="7dp"
+        android:fontFamily="@font/poppinsbold"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrending"
+        app:layout_constraintStart_toEndOf="@id/tvCoinName"/>
+
+    <TextView
+        android:id="@+id/tv1h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1h %"
+        android:layout_marginStart="7dp"
+        android:fontFamily="@font/poppinsbold"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrending"
+        app:layout_constraintStart_toEndOf="@id/tvPrice"/>
+
+    <TextView
+        android:id="@+id/tv24h"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24h %"
+        android:layout_marginStart="7dp"
+        android:fontFamily="@font/poppinsbold"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrending"
+        app:layout_constraintStart_toEndOf="@id/tv1h"/>
+
+    <TextView
+        android:id="@+id/tvMarketCap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Market Cap"
+        android:layout_marginStart="7dp"
+        android:fontFamily="@font/poppinsbold"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrending"
+        app:layout_constraintStart_toEndOf="@id/tv24h"/>
+
+    <TextView
+        android:id="@+id/tvVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume"
+        android:layout_marginStart="7dp"
+        android:fontFamily="@font/poppinsbold"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrending"
+        app:layout_constraintStart_toEndOf="@id/tvMarketCap"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvTrendingHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tvTrending"
+        app:layout_constraintTop_toBottomOf="@id/tvCoinName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
